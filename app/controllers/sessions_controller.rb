@@ -1,4 +1,4 @@
-class SessionsController < ActionController::Base
+class SessionsController < ShopifyApp::AuthenticatedController
   include ShopifyApp::SessionsConcern
 
   def referral

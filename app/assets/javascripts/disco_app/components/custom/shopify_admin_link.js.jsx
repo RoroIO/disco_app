@@ -10,7 +10,7 @@
  * This component is the React equivalent to the link_to_shopify_admin helper
  * found in app/helpers/disco_app/application_helper.rb.
  */
-var ShopifyAdminLink = React.createClass({
+var ShopifyAdminLink = createReactClass({
 
     handleClick: function(e) {
         e.preventDefault();

@@ -1,4 +1,4 @@
-var ShopFilterTab = React.createClass({
+var ShopFilterTab = createReactClass({
 
     /**
      * Handle a click event on the individual tab link.

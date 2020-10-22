@@ -1,4 +1,4 @@
-var ShopList = React.createClass({
+var ShopList = createReactClass({
 
     getDefaultProps: function() {
         return {
@@ -110,7 +110,7 @@ var ShopList = React.createClass({
 /**
  * Paginator.
  */
-ShopList.Paginator = React.createClass({
+ShopList.Paginator = createReactClass({
 
     handlePreviousClick: function(e) {
         this.props.onPageChanged(-1);
