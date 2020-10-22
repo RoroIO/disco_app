@@ -34,7 +34,6 @@ module DiscoApp::Concerns::WebhooksController
   private
 
     def verify_webhook
-      byebug
       unless webhook_is_valid?
         head :unauthorized
       end
