@@ -37,8 +37,7 @@ class InputText extends BaseInput {
           id={name}
           className="next-input"
           disabled={disabled}
-          value={value}
-          defaultValue={defaultValue}
+          defaultValue={value}
           name={name}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
@@ -60,6 +59,7 @@ InputText.propTypes = {
   placeholder: React.PropTypes.string,
   helpMessage: React.PropTypes.string,
   error: React.PropTypes.bool,
+  defaultValue: React.PropTypes.string,
   disabled: React.PropTypes.bool
 };
 

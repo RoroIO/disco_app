@@ -2,7 +2,6 @@ module DiscoApp::Concerns::Shop
   extend ActiveSupport::Concern
 
   included do
-    include ShopifyApp::Shop
     include ActionView::Helpers::DateHelper
 
     # Define relationships to plans and subscriptions.

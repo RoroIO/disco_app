@@ -1,4 +1,4 @@
-var FilterableShopList = React.createClass({
+var FilterableShopList = createReactClass({
 
     getDefaultProps: function() {
         return {

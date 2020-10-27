@@ -1,4 +1,4 @@
-var ShopFilterTabs = React.createClass({
+var ShopFilterTabs = createReactClass({
 
     onFilterTabSelected: function(filterTab) {
         this.props.onFilterReplace(filterTab.filter);

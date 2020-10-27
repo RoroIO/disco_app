@@ -9,7 +9,7 @@ class InputTextArea extends BaseInput {
     });
 
     const handleChange = (e) => {
-      onChange(e.target.value);
+      onChange && onChange(e.target.value);
     };
 
     let helpElement = null;
@@ -38,7 +38,7 @@ InputTextArea.propTypes = {
   defaultValue: React.PropTypes.string,
   label: React.PropTypes.string.isRequired,
   name: React.PropTypes.string.isRequired,
-  onChange: React.PropTypes.func.isRequired,
+  onChange: React.PropTypes.func,
   placeholder: React.PropTypes.string,
   helpMessage: React.PropTypes.string
 };
