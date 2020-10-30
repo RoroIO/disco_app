@@ -1,5 +1,5 @@
 class SessionsController < ShopifyApp::AuthenticatedController
-  include ShopifyApp::SessionsConcern
+  # include ShopifyApp::SessionsConcern
 
   def referral
     cookies[DiscoApp::SOURCE_COOKIE_KEY] = params[:source] if params[:source].present?
