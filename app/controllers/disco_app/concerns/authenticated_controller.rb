@@ -8,7 +8,7 @@ module DiscoApp::Concerns::AuthenticatedController
     before_action :check_installed
     before_action :check_current_subscription
     before_action :check_active_charge
-    around_action :shopify_session
+    around_action :activate_shopify_session
     layout 'embedded_app'
   end
 
@@ -25,7 +25,7 @@ module DiscoApp::Concerns::AuthenticatedController
 
     def shopify_shop
       if shop_session
-        @shop = DiscoApp::Shop.find_by!(shopify_domain: @shop_session.url)
+        @shop = DiscoApp::Shop.find_by!(shopify_domain: @current_shopify_session.domain)
       else
         redirect_to_login
       end
