@@ -60,7 +60,7 @@ module DiscoApp::ApplicationHelper
   def errors_to_react(model)
     {
       type: model.model_name.human.downcase,
-      errors: model.errors.keys,
+      errors: model.errors.try(:keys) || [],
       messages: model.errors.full_messages
     }.as_json
   end

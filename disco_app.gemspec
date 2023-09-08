@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
 
   s.test_files = Dir["test/**/*"]
 
-  s.add_runtime_dependency 'rails', '~> 5.2.0'
+  s.add_runtime_dependency 'rails', '~> 7.0.7.2'
   s.add_runtime_dependency 'sass-rails', '~> 5.0'
   s.add_runtime_dependency 'uglifier', '~> 4.1'
   s.add_runtime_dependency 'coffee-rails', '~> 4.2'
@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'shopify_app', '~> 18.1.2'
   s.add_runtime_dependency 'puma', '~> 3.9'
   s.add_runtime_dependency 'sidekiq', '~> 5.0'
-  s.add_runtime_dependency 'pg', '~> 0.21.0'
+  s.add_runtime_dependency 'pg'
   s.add_runtime_dependency 'rails_12factor', '~> 0.0.3'
   s.add_runtime_dependency 'active_utils', '~> 3.2'
   s.add_runtime_dependency 'activerecord-session_store', '~> 1.0'
