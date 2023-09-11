@@ -1,2 +1,2 @@
-class DiscoApiError < StandardError
+class DiscoApp::DiscoApiError < StandardError
 end
